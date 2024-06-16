@@ -33,7 +33,7 @@ export default function Send(){
                             'authorization': "Bearer"+" "+localStorage.getItem("token")
                         }
                     })
-                    navigate(`/transaction?msg=${res.msg}`)
+                    navigate(`/transaction?msg=${res.data.msg}`)
                 }} label="Send Amount"></Redbutton>
                 
 
